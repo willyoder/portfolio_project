@@ -15,7 +15,7 @@ WORKDIR /src
 COPY ["MyPortfolio/MyPortfolio.csproj", "MyPortfolio/"]
 RUN dotnet restore "MyPortfolio/MyPortfolio.csproj"
 COPY . .
-WORKDIR "/src/MyPortfilio"
+WORKDIR "/src/MyPortfolio"
 RUN dotnet build "MyPortfolio.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
