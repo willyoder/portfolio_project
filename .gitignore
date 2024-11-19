@@ -1,0 +1,23 @@
+# Ignore Visual Studio files
+.vs/
+.vscode/
+.idea/
+
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore package directories
+node_modules/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore compiled files
+*.dll
+*.exe
+*.pdb
+*.cache
